@@ -1,5 +1,7 @@
 # FileMonitoringSystem
 
+This project implements a Linux system service in C that monitors selected files for modifications or deletions, detecting unauthorized changes or removals. By actively tracking file integrity, the service enhances security and strengthens the system's overall resilience against potential threats.
+
 ## Installation and Startup:
 
 + Inside the **scripts** folder, run the following commands for installation and startup, respectively: 
