@@ -1,35 +1,35 @@
-# TP3-TS
+# FileMonitoringSystem
 
-## Instalação e inicialização:
+## Installation and Startup:
 
-+ Dentro da pasta **scripts** executar os comandos de instalação e inicialização respetivamente 
++ Inside the **scripts** folder, run the following commands for installation and startup, respectively: 
   + sudo bash install.sh
   + sudo bash start.sh
 
-## Para apagar todos os ficheiros 
+## To delete all files
   + sudo bash uninstall.sh
-## Aceder aos logs
+## Accessing logs
 
 + cat /etc/rsyslog.d/monitord-logs.conf
 + cat /var/log/monitord-logs.log
 
-## Utilização do serviço
+## Using the Service
 
-+ Definir um ficheiro para ser vigiado
-  + Criar um ficheiro qualquer ou utilizar um já existente
-    + Na pasta, para adicionar o ficheiro àqueles que serão vigiados, executar:
++ To designate a file to be monitored:
+  + Create a new file or use an existing one
+    + In the folder, to add the file to those being monitored, run:
       + /etc/mon -a <path do ficheiro>
-        + Para verificar se ocorreram alterações nos ficheiros vigiados basta aos logs com o comando mencionado anteriormente para visualizar qual o ficheiro que foi alterado, assim como a data da alteração
+        + To check if any monitored files have been altered, use the previously mentioned command to view logs showing which file was changed and the date of the modification
     
-+ Verificar registos:
++ Check records:
   + cat /etc/monitord-registry.txt
 
-+ Definir um ficheiro para deixar de ser vigiado
++ To stop monitoring a file:
   + /etc/mon -d <path do ficheiro>
 
-## Finalização: Terminar o serviço
+## Shutdown: Terminate the service
 
-+ Dentro da pasta **scripts** executar o comando:
++ Inside the **scripts** folder, run the command:
   + sudo bash stop.sh
   
   
